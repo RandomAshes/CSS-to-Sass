@@ -1,0 +1,39 @@
+// =====================================
+// Aesthetics Extends
+// =====================================
+
+//TYPE Placeholders
+
+%uppercase {
+	text-transform: uppercase;
+}
+
+%bold {
+	font-weight: bold;
+}
+
+
+// =====================================
+// Content Extends
+// =====================================
+
+// Display: Inline-block Placeholders
+
+%inlineBlock {
+	display: inline-block;
+}
+
+// Flexbox Placeholders
+
+%flex {
+	display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+%flexCol {
+	-webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+}

@@ -1,0 +1,56 @@
+// =====================================
+// Footer Styles
+// =====================================
+
+.footer {
+	height: 75px;
+	padding-top: 25px;
+	
+	@include mq(tablet) {
+		margin-bottom: 50px;
+	}
+	@include mq(desktop) {
+		margin: 0 auto;
+	} 
+
+	a {
+		@include noMargin;
+	}
+
+	p {
+		float: left;
+		@include noMargin;
+
+		@include mq(tablet) {
+			float: left;
+		}
+	}
+
+	li {
+		@include mq(tablet) {
+			display: inline;
+		}
+	}
+
+	&-link {
+		display: none;
+		@include noMargin;
+
+		@include mq(tablet) {
+			display: inline;
+			float: right;
+			padding-left: 30px; 
+		}
+	}
+}
+
+#mobile_link {
+	float: right;
+	@include noMargin;
+	@include mq(tablet) {
+		display: none;
+	}
+}
+
+
+

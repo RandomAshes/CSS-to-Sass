@@ -1,0 +1,46 @@
+// =====================================
+// Global Variables
+// =====================================
+
+// Font Family
+
+$font-url--google       : 'https://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700,800';
+
+$stack-sans-serif 			: 'Open Sans', sans-serif;
+
+
+// Font Size
+
+$font-size-xsm					: .8em;
+$font-size-sm						: .9em;
+
+$font-size-main					: .95em;
+
+$font-size-h2						:	1.15em;					
+$font-size-h1						: 1.55em;
+
+
+// Descriptive color variables
+
+$white									: #fff;
+$lunar-green            : #3d4c3d;
+$gray										: #7f7f7f;
+$frostee								: #ebf8eb;
+$peppermint							: #d8f2d8;
+
+
+// Functional color variables
+
+$color-body							: $frostee;
+$color-body-sec					: $white;
+
+$color-text-base				: $lunar-green;
+$color-text-light				: $gray;
+
+$color-border						: $peppermint;
+
+// Breakpoints
+
+$brkpoint-tablet				: 768px;
+$brkpoint-desktop   		: 1024px;
+

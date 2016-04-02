@@ -1,0 +1,39 @@
+// =====================================
+// Contact Styles
+// =====================================
+
+.contact {
+	h3 {
+		padding: 45px 0 15px; 
+	}
+
+	p {
+		@include noMargin;
+	}
+
+	&-p {
+		max-width: 520px;
+		@extend %inlineBlock;
+		@include mq(tablet) {
+			font-size: 1.2em;
+		}
+	}
+}
+
+#info {
+	padding: 20px 0 50px;
+
+	li {
+		padding: 8px 0;
+	}
+
+	p {
+		@extend %inlineBlock;
+	}
+
+	a {
+		padding-left: 10px;
+		@extend %inlineBlock;
+	}
+}
+

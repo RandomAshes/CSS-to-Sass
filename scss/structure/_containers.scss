@@ -1,0 +1,27 @@
+// =====================================
+// Container Styles
+// =====================================
+
+// Global Wrap
+
+.wrap {
+	margin: 0 15px;
+	
+	@include mq(tablet) {
+		max-width: 768px;
+		margin: 0 30px;
+	}
+	@include mq(desktop) {
+		max-width: 965px;
+		margin: 0 auto;
+	}
+}
+
+// Image Gallery Container
+// for  Main Section
+
+.main {
+	max-width: 965px;
+	margin: 0 auto;
+	padding-bottom: 20px;
+}

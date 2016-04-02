@@ -1,0 +1,55 @@
+// =====================================
+// Color Styles
+// =====================================
+
+// GLOBAL
+
+body {
+	background-color: $color-body;
+	color: $color-text-base;
+}
+
+a {
+	color: $color-text-base;
+}
+
+
+// NAV
+
+.nav a {
+	background-color: $color-body-sec;
+	@include mq(tablet) {
+		background-color: transparent;
+	}
+}
+
+
+// HEADER 
+
+#profile_img {
+	border: solid 8px $color-border;
+}
+
+// MAIN
+
+.main {
+	background-color: $color-body-sec;
+}
+
+// CONTACT
+
+#info {
+	& a {
+		color: $color-text-light;
+	}
+
+	& p {
+		color: $color-text-light;
+	}	
+}
+
+// FOOTER
+
+.footer {
+	border-top: solid 1px $color-border;
+}

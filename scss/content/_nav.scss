@@ -1,0 +1,60 @@
+// =====================================
+// Navigation Styles
+// =====================================
+
+.main-nav {
+	margin-bottom: 40px;
+	
+	@include mq(tablet) {
+		margin: 50px 0;
+	}
+	@include mq(desktop) {
+		padding: 0 30px;
+		@include noMargin;
+	}
+}
+
+.nav {
+	@include mq(desktop) {
+		display: flex;
+		flex-direction: row;
+		height: 140px;
+		line-height: 140px;
+	}
+
+	h1 {
+		margin-bottom: 20px;
+		@include mq(desktop) {
+			@include noPadding;
+			@include noMargin;
+		}
+	}
+
+	a {
+		display: block;
+		margin-bottom: 5px;
+		padding: 10px 0;
+		@include mq(desktop) {
+			@include noPadding;
+			@include noMargin;
+		}
+	}
+
+	li:first-child {
+		@include mq(desktop) {
+			margin-right: auto;
+		}
+	}
+
+	li:nth-child(1n+2) {
+		@include mq(tablet) {
+			display: inline-block;
+		}
+	}
+
+	li:nth-child(1n+3) {
+		@include mq(tablet) {
+			margin-left: 40px;
+		}
+	}
+}

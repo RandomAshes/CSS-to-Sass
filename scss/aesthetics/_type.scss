@@ -1,0 +1,86 @@
+// =====================================
+// Typography Styles
+// =====================================
+
+// Global
+
+body {
+	text-align: center;
+	font-family: $stack-sans-serif;
+	font-size: $font-size-main;
+	-webkit-font-smoothing: antialiased;
+}
+
+a {
+	text-decoration: none;
+	@extend %bold;
+}
+
+p {
+	line-height: 1.4em; 
+	font-weight: 300;
+}
+
+h3 {
+	@extend %uppercase;
+}
+
+li {
+	list-style-type: none;
+}
+
+// NAV
+
+.nav {
+	& h1 {
+		font-size: $font-size-h1;
+	}
+
+	& a {
+		font-size: $font-size-sm;
+		font-weight: 700;
+		@extend %uppercase;
+	}
+}
+
+// MAIN
+
+.main h3 {
+	font-size: $font-size-sm;
+}
+
+.group {
+	line-height: 1.6em;
+
+	& h2 {
+	font-size: $font-size-h2;
+	font-weight: 600;
+	}
+	& p {
+		font-size: $font-size-main;
+	}
+}
+
+// CONTACT
+
+.contact h3 {
+	font-size: $font-size-main;
+}
+
+
+// FOOTER 
+
+.footer {
+	& a {
+		font-size: $font-size-xsm;
+		@extend %uppercase;
+		@extend %bold;
+	}
+
+	& p {
+		font-size: $font-size-sm;
+		@extend %bold;
+	}
+}
+
+

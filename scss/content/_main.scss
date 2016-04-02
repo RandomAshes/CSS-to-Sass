@@ -1,0 +1,55 @@
+// =====================================
+// Main Section Styles:
+// Portfolio Gallery
+// =====================================
+
+.main {
+	@extend %flex;
+	@extend %flexCol;
+	
+	@include mq(desktop) {
+		padding: 0 25px;
+	}
+}
+
+.main h3 {
+	@include noMargin;
+	padding: 45px 0;
+}
+
+.main-content {
+	@include mq(tablet) {
+		display: flex;
+		flex-direction: row;
+		justify-content: space-between;
+		flex-wrap: wrap;
+	}
+}
+
+// MAIN: group
+
+.group {
+	padding-bottom: 40px;
+
+	@include mq(tablet) {
+		flex-grow: 1;
+		padding: 0 5px 60px;
+		max-width: 350px
+	}
+	@include mq(desktop) {
+		max-width: 290px;
+	}
+	 
+	img {
+		width: 100%;
+	}
+
+	h2 {
+		margin-top: 18px;
+	}
+
+	p {
+		margin: 0 10px;
+	}
+}
+

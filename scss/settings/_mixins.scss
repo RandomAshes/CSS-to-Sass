@@ -1,0 +1,32 @@
+// =====================================
+// Mixins
+// =====================================
+
+// No Margin 
+
+@mixin noMargin {
+	margin: 0;
+}
+
+@mixin noPadding {
+	padding: 0;
+}
+
+
+// Media queries
+
+@mixin mq($break) {
+	@if $break == "tablet" {
+		@media (min-width: $brkpoint-tablet) {
+			@content;
+		}
+	}
+	@else if $break == "desktop" {
+		@media (min-width: $brkpoint-desktop) {
+			@content;
+		}
+	}
+	@else {
+		@error "Whoops, No value could be retrieved for '#{$break}'."
+	}
+}
