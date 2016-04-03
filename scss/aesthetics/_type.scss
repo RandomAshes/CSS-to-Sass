@@ -12,8 +12,16 @@ body {
 }
 
 a {
-	text-decoration: none;
 	@extend %bold;
+	text-decoration: none;
+}
+
+button {
+	@extend %bold;
+}
+
+button:focus {
+	outline: none !important;
 }
 
 p {
@@ -29,19 +37,21 @@ li {
 	list-style-type: none;
 }
 
+
 // NAV
 
 .nav {
-	& h1 {
+	h1 {
 		font-size: $font-size-h1;
 	}
 
-	& a {
+	a {
+		@extend %uppercase;
 		font-size: $font-size-sm;
 		font-weight: 700;
-		@extend %uppercase;
 	}
 }
+
 
 // MAIN
 
@@ -52,14 +62,15 @@ li {
 .group {
 	line-height: 1.6em;
 
-	& h2 {
-	font-size: $font-size-h2;
-	font-weight: 600;
+	h2 {
+		font-size: $font-size-h2;
+		font-weight: 600;
 	}
-	& p {
+	p {
 		font-size: $font-size-main;
 	}
 }
+
 
 // CONTACT
 
@@ -71,16 +82,14 @@ li {
 // FOOTER 
 
 .footer {
-	& a {
-		font-size: $font-size-xsm;
+	a {
 		@extend %uppercase;
 		@extend %bold;
+		font-size: $font-size-xsm;
 	}
 
-	& p {
-		font-size: $font-size-sm;
+	p {
 		@extend %bold;
+		font-size: $font-size-sm;
 	}
 }
-
-

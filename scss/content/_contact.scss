@@ -12,8 +12,9 @@
 	}
 
 	&-p {
-		max-width: 520px;
 		@extend %inlineBlock;
+		max-width: 520px;
+
 		@include mq(tablet) {
 			font-size: 1.2em;
 		}
@@ -32,8 +33,7 @@
 	}
 
 	a {
-		padding-left: 10px;
 		@extend %inlineBlock;
+		padding-left: 10px;
 	}
 }
-
