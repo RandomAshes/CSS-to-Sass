@@ -30,3 +30,29 @@
 		@error "Whoops, No value could be retrieved for '#{$break}'."
 	}
 }
+
+// Flexbox
+
+@mixin flex {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+@mixin flexCol {
+	-webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+}
+
+@mixin flexRow {
+	-webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+}
+
+@mixin justSpBtwn {
+	-webkit-justify-content: space-between;
+	-ms-justify-content: space-between;
+	justify-content: space-between;
+}

@@ -3,35 +3,32 @@
 // =====================================
 
 #profile_img {
+	@extend %autoMarg;
 	display: block;
 	width: 200px;
 	height: 125px;
-	margin: 0 auto;
 }
 
 header {
-	@extend %flex;
-	@extend %flexCol;
+	@include flex;
+	@include flexCol;
 	padding-bottom: 40px;
 	
 	@include mq(tablet) {
+		@include justSpBtwn;
 		flex-direction: row-reverse;
-		justify-content: space-between;
-	}
-	@include mq(desktop) {
-		flex-direction: row-reverse;
-		justify-content: space-between;
 	}
 
 	p {
 		margin-top: 20px;
 		
 		@include mq(tablet) {
+			@include noMargin;
 			max-width: 404px;
 			text-align: left;
 			font-size: 1.25em;
-			@include noMargin;
 		}
+
 		@include mq(desktop) {
 			max-width: 500px;
 			margin-left: 30px;
@@ -43,6 +40,7 @@ header {
 			width: 290px;
 			height: 100%;
 		}
+		
 		@include mq(desktop) {
 			width: 370px;
 			height: 100%;

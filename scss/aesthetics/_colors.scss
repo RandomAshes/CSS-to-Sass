@@ -2,6 +2,7 @@
 // Color Styles
 // =====================================
 
+
 // GLOBAL
 
 body {
@@ -13,16 +14,15 @@ a {
 	color: $color-text-base;
 }
 
-
 // NAV
 
 .nav a {
 	background-color: $color-body-sec;
+
 	@include mq(tablet) {
 		background-color: transparent;
 	}
 }
-
 
 // HEADER 
 
@@ -39,11 +39,11 @@ a {
 // CONTACT
 
 #info {
-	& a {
+	a {
 		color: $color-text-light;
 	}
 
-	& p {
+	p {
 		color: $color-text-light;
 	}	
 }

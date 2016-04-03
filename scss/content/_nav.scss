@@ -8,22 +8,24 @@
 	@include mq(tablet) {
 		margin: 50px 0;
 	}
+
 	@include mq(desktop) {
-		padding: 0 30px;
 		@include noMargin;
+		padding: 0 30px;
 	}
 }
 
 .nav {
 	@include mq(desktop) {
-		display: flex;
-		flex-direction: row;
+		@include flex;
+		@include flexRow;
 		height: 140px;
 		line-height: 140px;
 	}
 
 	h1 {
 		margin-bottom: 20px;
+
 		@include mq(desktop) {
 			@include noPadding;
 			@include noMargin;
@@ -34,9 +36,11 @@
 		display: none;
 		margin-bottom: 5px;
 		padding: 10px 0;
+
 		@include mq(tablet) {
 			display: block;
 		}
+
 		@include mq(desktop) {
 			@include noPadding;
 			@include noMargin;
@@ -47,27 +51,32 @@
 	button {
 		width: 100%;
 		height: 39px;
-		margin-bottom: 10px;
+		margin-bottom: 5px;
+		background-color: $white;
+		border: none;
+
 		@include mq(tablet) {
 			display: none;
 		}
 	}
 
-	li:first-child {
-		@include mq(desktop) {
-			margin-right: auto;
+	li {
+		&:first-child {
+			@include mq(desktop) {
+				margin-right: auto;
+			}
 		}
-	}
 
-	li:nth-child(1n+2) {
-		@include mq(tablet) {
-			display: inline-block;
+		&:nth-child(1n+2) {
+			@include mq(tablet) {
+				display: inline-block;
+			}
 		}
-	}
 
-	li:nth-child(1n+3) {
-		@include mq(tablet) {
-			margin-left: 40px;
+		&:nth-child(1n+3) {
+			@include mq(tablet) {
+				margin-left: 40px;
+			}
 		}
 	}
 }

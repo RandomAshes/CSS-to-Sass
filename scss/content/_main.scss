@@ -4,8 +4,8 @@
 // =====================================
 
 .main {
-	@extend %flex;
-	@extend %flexCol;
+	@include flex;
+	@include flexCol;
 	
 	@include mq(desktop) {
 		padding: 0 25px;
@@ -19,9 +19,9 @@
 
 .main-content {
 	@include mq(tablet) {
-		display: flex;
-		flex-direction: row;
-		justify-content: space-between;
+		@include flex;
+		@include flexRow;
+		@include justSpBtwn;
 		flex-wrap: wrap;
 	}
 }
@@ -36,6 +36,7 @@
 		padding: 0 5px 60px;
 		max-width: 350px
 	}
+
 	@include mq(desktop) {
 		max-width: 290px;
 	}
@@ -52,4 +53,3 @@
 		margin: 0 10px;
 	}
 }
-
