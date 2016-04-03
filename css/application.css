@@ -133,13 +133,24 @@ li {
       padding: 0;
       margin: 0; } }
 .nav a {
-  display: block;
+  display: none;
   margin-bottom: 5px;
   padding: 10px 0; }
+  @media (min-width: 768px) {
+    .nav a {
+      display: block; } }
   @media (min-width: 1024px) {
     .nav a {
       padding: 0;
-      margin: 0; } }
+      margin: 0;
+      display: block; } }
+.nav button {
+  width: 100%;
+  height: 39px;
+  margin-bottom: 10px; }
+  @media (min-width: 768px) {
+    .nav button {
+      display: none; } }
 @media (min-width: 1024px) {
   .nav li:first-child {
     margin-right: auto; } }
