@@ -16,7 +16,7 @@
 		max-width: 520px;
 
 		@include mq(tablet) {
-			font-size: 1.2em;
+			font-size: $font-size-p-sm;
 		}
 	}
 }

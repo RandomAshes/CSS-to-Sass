@@ -11,6 +11,13 @@ a, button, .footer a, .footer p {
 .main, #profile_img {
   margin: 0 auto; }
 
+.nav a, .nav li button {
+  margin-bottom: 5px;
+  width: 100%;
+  height: 39px;
+  background-color: #fff;
+  border: none; }
+
 * {
   box-sizing: border-box; }
 
@@ -132,7 +139,6 @@ li {
       margin: 0; } }
 .nav a {
   display: none;
-  margin-bottom: 5px;
   padding: 10px 0; }
   @media (min-width: 768px) {
     .nav a {
@@ -142,23 +148,20 @@ li {
       padding: 0;
       margin: 0;
       display: block; } }
-.nav button {
-  width: 100%;
-  height: 39px;
-  margin-bottom: 5px;
-  background-color: #fff;
-  border: none; }
-  @media (min-width: 768px) {
-    .nav button {
-      display: none; } }
+@media (min-width: 768px) {
+  .nav li button {
+    display: none; } }
 @media (min-width: 1024px) {
   .nav li:first-child {
     margin-right: auto; } }
 @media (min-width: 768px) {
-  .nav li:nth-child(1n+2) {
-    display: inline-block; } }
+  .nav li:nth-child(2) {
+    display: none; } }
 @media (min-width: 768px) {
   .nav li:nth-child(1n+3) {
+    display: inline-block; } }
+@media (min-width: 768px) {
+  .nav li:nth-child(1n+4) {
     margin-left: 40px; } }
 
 #profile_img {
@@ -185,9 +188,9 @@ header {
     @media (min-width: 768px) {
       header p {
         margin: 0;
+        font-size: 1.25em;
         max-width: 404px;
-        text-align: left;
-        font-size: 1.25em; } }
+        text-align: left; } }
     @media (min-width: 1024px) {
       header p {
         max-width: 500px;
