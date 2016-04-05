@@ -24,9 +24,9 @@ header {
 		
 		@include mq(tablet) {
 			@include noMargin;
+			font-size: $font-size-p;
 			max-width: 404px;
 			text-align: left;
-			font-size: 1.25em;
 		}
 
 		@include mq(desktop) {
